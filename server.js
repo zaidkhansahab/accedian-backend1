@@ -20,7 +20,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: err.message });
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 10000;
 
 mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
